@@ -10,6 +10,7 @@ header {
   width: 100%;
   background-color: black;
   min-height: 120px;
+  padding-top: 10px;
 }
 header .container {
   display: flex;
@@ -17,11 +18,101 @@ header .container {
   align-items: center;
   max-width: 1300px;
   margin: auto;
-  border: 1px solid red;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 header .container nav ul {
   color: white;
   list-style: none;
   display: flex;
   gap: 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+header .container .user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .container .user button {
+  width: 232px;
+  height: 70px;
+  border-radius: 35px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+header .container .user button:hover {
+  opacity: 0.9;
+}
+@media (max-width: 500px) {
+  header .container {
+    display: none;
+  }
+}
+
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    background-image: url(./img/back.png);
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+  .mobile-header .logo {
+    position: absolute;
+    left: 35%;
+    top: 40px;
+  }
+  .mobile-header .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 160px;
+  }
+  .mobile-header .content {
+    padding-top: 40px;
+  }
+  .mobile-header .content h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .mobile-header .content p {
+    color: white;
+    padding-top: 10px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .mobile-header .content button {
+    width: 100%;
+    margin-top: 30px;
+    height: 60px;
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 30px;
+    transition: 0.2s;
+  }
+  .mobile-header .content button:active {
+    opacity: 0.8;
+  }
 }/*# sourceMappingURL=style.css.map */

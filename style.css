@@ -57,12 +57,58 @@ header .container .user button:hover {
   }
 }
 
+.section-laptop {
+  width: 100%;
+  background-image: url(./img/back-lap.png);
+  background-position: center;
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-laptop .container {
+  max-width: 1120px;
+  padding-top: 100px;
+  margin: auto;
+  display: block;
+  justify-content: space-around;
+}
+.section-laptop .container h1 {
+  color: white;
+  font-size: 80px;
+  line-height: 90px;
+}
+.section-laptop .container p {
+  color: white;
+  padding-top: 10px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.section-laptop .container button {
+  width: 300px;
+  margin-top: 30px;
+  height: 60px;
+  border: none;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 30px;
+  transition: 0.2s;
+  transition: 0.3s;
+}
+.section-laptop .container button:hover {
+  opacity: 0.8;
+}
+
 .mobile-header {
   display: none;
 }
 
 @media (max-width: 500px) {
   header {
+    display: none;
+  }
+  .section-laptop {
     display: none;
   }
   .mobile-header {

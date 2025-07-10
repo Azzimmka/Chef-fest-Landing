@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: rgb(13, 13, 13);
+}
+
 @mixin container-flex {
   display: flex;
   justify-content: space-around;
@@ -70,7 +74,6 @@ header {
 // ------section-laptop ------
 .section-laptop {
     width: 100%;
-
     background-image: url(./img/back-lap.png);
     background-position: center;
     min-height: 800px;
@@ -183,4 +186,98 @@ header {
       }
     }
   }
+}
+
+// ------section-2 -- ------
+
+.section-2 {
+    width: 100%;
+
+    @media (max-width: 500px) {
+        .container{
+            flex-direction: column;
+
+            .twice {
+                flex-direction: column;
+
+                .p-2 {
+
+                    br {
+                        display: none;
+                    }
+
+                }
+                .cook {
+                    position: relative;
+                    max-width: 360px;
+                    overflow: hidden;
+
+
+                }
+
+                .absalute {
+                    position: absolute;
+
+
+                }
+                
+            }
+        }
+        
+    }
+
+    .container{
+        max-width: 1120px;
+        color: white;
+        margin: auto;
+        text-align: center;
+
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .p-1 {
+            line-height: 30px;
+        }
+
+        .twice {
+            display: flex;
+            justify-content: center;
+            gap: 87px;
+            align-items: center;
+
+            padding-top: 70px;
+
+            .p-2 {
+                text-align: center;
+                line-height: 23px;
+                font-weight: 200;
+            }
+
+            .absalute {
+                // margin-left: 200px;
+                z-index: 999;
+                background-color: white;
+                width: 70px;
+                height: 70px;
+                display: grid;
+                place-items: center;
+                right: 265px;
+                border-radius: 50%;
+            }
+            .absalute img{
+                width: 30px;
+                margin-left: 6px;
+
+            }
+
+            img {
+                width: 430px;
+                border-radius: 8px;
+            }
+        }
+    }
 }

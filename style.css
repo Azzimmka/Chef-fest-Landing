@@ -6,6 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: rgb(13, 13, 13);
+}
+
 header {
   width: 100%;
   background-color: black;
@@ -161,4 +165,70 @@ header .container .user button:hover {
   .mobile-header .content button:active {
     opacity: 0.8;
   }
+}
+.section-2 {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .section-2 .container {
+    flex-direction: column;
+  }
+  .section-2 .container .twice {
+    flex-direction: column;
+  }
+  .section-2 .container .twice .p-2 br {
+    display: none;
+  }
+  .section-2 .container .twice .cook {
+    position: relative;
+    max-width: 360px;
+    overflow: hidden;
+  }
+  .section-2 .container .twice .absalute {
+    position: absolute;
+  }
+}
+.section-2 .container {
+  max-width: 1120px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+.section-2 .container h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  margin-top: 80px;
+}
+.section-2 .container .p-1 {
+  line-height: 30px;
+}
+.section-2 .container .twice {
+  display: flex;
+  justify-content: center;
+  gap: 87px;
+  align-items: center;
+  padding-top: 70px;
+}
+.section-2 .container .twice .p-2 {
+  text-align: center;
+  line-height: 23px;
+  font-weight: 200;
+}
+.section-2 .container .twice .absalute {
+  z-index: 999;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  right: 265px;
+  border-radius: 50%;
+}
+.section-2 .container .twice .absalute img {
+  width: 30px;
+  margin-left: 6px;
+}
+.section-2 .container .twice img {
+  width: 430px;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
